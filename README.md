@@ -2,7 +2,7 @@ This is a simple live reload server that tracks html, css, js and php files. It 
 
 1. First build the image, be sure to be in the root path of **this repository**:
   - if using docker compose: run `docker compose build`
-  - if using vanilla docker: run `build . -t livereload`
+  - if using vanilla docker: run `docker build -t livereload .`
 2. Then run the container, be sure to be in the root path of **your workspace**:
   - if using docker compose: run `docker compose up`
   - if using vanilla docker: run `docker run --rm -p 3000:3000 -v <your project root path>:/srv/input livereload:latest`

@@ -1,0 +1,10 @@
+services:
+  lr:
+    image: livereload
+    container_name: livereload
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - ./public/:/srv/input
+
